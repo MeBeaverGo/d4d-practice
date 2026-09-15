@@ -10,7 +10,7 @@ in the same place as the work.
 
 ## Description
 
-Write one or two sentences here saying what this repository is.
+This repo is a practice repo to learn the processes to undo deleted content.
 
 ---
 
@@ -67,7 +67,7 @@ tells me you got through the exercise. A note that says which command you
 reached for first and why it was the wrong one tells me you understand what
 happened.
 
-*(your note goes here)*
+I followed the instructions given in the Brightspace Step by Step assignment. It said to delete random content from the styles sheet, which I did. And then I typed random nonsense in the middle. I then saved the file, and restored in with "git restore styles.css". Afterwards, I deleted the navigation block from the index.html file. I pushed that, and the restored it using "git revert HEAD". At one point, there was an issue that appeared where the terminal continuously was running a command, and I then had to look up how to stop it. That was resolved fairly quickly, but I am unable to remember what error I had made to create that issue.
 
 ---
 
