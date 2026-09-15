@@ -24,7 +24,8 @@
       three items at a time for one week.
     </p>
 
-    <!-- TODO: a way to filter this list goes above it -->
+    <label for="tool-filter">Filter tools</label>
+    <input type="search" id="tool-filter" placeholder="Search by name, category, or status">
 
     <ul class="tool-list">
       <li class="tool">
@@ -59,6 +60,18 @@
   <footer class="site-footer">
     <p>Sixth Ward Tool Library</p>
   </footer>
+
+  <script>
+    const toolFilter = document.querySelector("#tool-filter");
+    const tools = document.querySelectorAll(".tool-list .tool");
+
+    toolFilter.addEventListener("input", () => {
+      const query = toolFilter.value.trim().toLowerCase();
+      tools.forEach((tool) => {
+        tool.hidden = !tool.textContent.toLowerCase().includes(query);
+      });
+    });
+  </script>
 
 </body>
 </html>
